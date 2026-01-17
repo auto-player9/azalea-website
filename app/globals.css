@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* الألوان الخاصة بمتجرك */
+  --pink-soft: #FFE5EC;
+  --pink-accent: #FFB3C6;
+  --blue-calm: #E3F2FD;
+  --gray-dark: #1F2937;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-pink-soft: var(--pink-soft);
+  --color-pink-accent: var(--pink-accent);
+  --color-blue-calm: var(--blue-calm);
+  --color-gray-dark: var(--gray-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Cairo', sans-serif;
+}
