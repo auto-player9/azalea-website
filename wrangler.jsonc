@@ -1,10 +1,10 @@
 {
-"name": "azalea-website",
+  "name": "luxury-linen",
+  "main": ".open-next/worker.js",
   "compatibility_date": "2026-01-18",
-  "compatibility_flags": [ "nodejs_compat" ],
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": ".vercel/output/static", 
+    "directory": ".open-next/assets", 
     "binding": "ASSETS"
-  },
-  "main": ".open-next/worker.js"
+  }
 }
