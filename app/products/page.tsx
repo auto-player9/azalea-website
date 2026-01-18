@@ -14,7 +14,7 @@ interface Product {
     isBestseller: boolean;
 }
 
-export const runtime = 'edge';
+
 
 export default async function ShopPage({
     searchParams,

@@ -4,8 +4,6 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Check, ShieldCheck, Truck } from "lucide-react";
 
-export const runtime = 'edge';
-
 export default async function ProductDetailsPage({
     params
 }: {
