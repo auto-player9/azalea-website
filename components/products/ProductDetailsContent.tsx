@@ -4,7 +4,13 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Check, ShieldCheck, Truck } from "lucide-react";
 
-export default async function ProductDetailsContent({ id }: { id: string }) {
+export default async function ProductDetailsContent({
+    params
+}: {
+    params: Promise<{ id: string }>
+}) {
+
+    const { id } = await params;
     const product = await client.fetch(PRODUCT_BY_ID_QUERY, { id }, { cache: 'no-store' });
 
     if (!product) {
@@ -32,7 +38,7 @@ export default async function ProductDetailsContent({ id }: { id: string }) {
                     </Badge>
                 )}
             </div>
-            
+
             <div className="flex flex-col text-right space-y-8">
                 <div>
                     <span className="text-pink-accent font-bold tracking-widest text-sm mb-3 block uppercase">
