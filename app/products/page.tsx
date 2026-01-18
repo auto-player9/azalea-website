@@ -19,8 +19,11 @@ export default async function Page({
             </div>
 
             <div className="flex flex-col lg:flex-row gap-8">
-                <FiltersSidebar categories={categories} />
                 
+                <Suspense fallback={<div className="w-64 h-96 bg-secondary/20 animate-pulse rounded-2xl" />}>
+                    <FiltersSidebar categories={categories} />
+                </Suspense>
+
                 <div className="flex-1">
 
                     <Suspense fallback={<ProductSkeleton />}>
