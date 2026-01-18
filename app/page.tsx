@@ -1,23 +1,19 @@
+import { Suspense } from "react";
 import Hero from "@/components/home/Hero";
-import Bestsellers from "@/components/home/Bestsellers";
-import { client } from "@/sanity/lib/client";
-import { BESTSELLERS_QUERY } from "@/sanity/lib/queries";
+import BestsellersWrapper from "@/components/home/BestsellersWrapper"; 
+import ProductSkeleton from "@/components/products/ProductSkeleton";
 import Collections from "@/components/home/Collections";
 import About from "@/components/home/About";
 import Contact from "@/components/home/Contact";
 
-async function getBestsellers() {
-  const data = await client.fetch(BESTSELLERS_QUERY);
-  return data;
-}
-
-export default async function Home() {
-  const products = await getBestsellers();
-
+export default function Home() {
   return (
     <main>
       <Hero />
-      <Bestsellers products={products} />
+      <Suspense fallback={<div className="py-20 px-4"><ProductSkeleton /></div>}>
+        <BestsellersWrapper />
+      </Suspense>
+
       <Collections />
       <About />
       <Contact />
