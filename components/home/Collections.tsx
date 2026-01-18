@@ -7,7 +7,7 @@ const collections = [
     title: 'أطقم اللحاف',
     description: 'تشكيلة واسعة من الأطقم الفاخرة',
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80',
-    link: '/products?category=لحاف',
+    link: '/products?category=أطقم لحاف',
   },
   {
     title: 'مخدات فاخرة',
@@ -19,7 +19,7 @@ const collections = [
     title: 'شراشف قطنية',
     description: 'شراشف طبيعي بجودة عالية',
     image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
-    link: '/products?category=شراشف',
+    link: '/products?category=مفارش',
   },
 ];
 
