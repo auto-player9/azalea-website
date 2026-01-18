@@ -14,7 +14,22 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-const FIXED_SIZES = ["S", "M", "L", "XL", "XXL", "مفرد", "مزدوج", "كينج"];
+const FIXED_SIZES = [
+  "S", "M", "L", "XL", 
+  "single",
+  "double", 
+  "king" 
+];
+
+const sizeLabels: Record<string, string> = {
+  S: "S",
+  M: "M",
+  L: "L",
+  XL: "XL",
+  single: "مفرد",
+  double: "مزدوج",
+  king: "كينج",
+};
 
 export default function FiltersSidebar({ categories }: { categories: string[] }) {
     const router = useRouter();
@@ -110,7 +125,7 @@ export default function FiltersSidebar({ categories }: { categories: string[] })
                                                 : "border-border bg-background text-muted-foreground hover:border-pink-accent/50"
                                         )}
                                     >
-                                        {size}
+                                        {sizeLabels[size] || size}
                                     </button>
                                 ))}
                             </div>
