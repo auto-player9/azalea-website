@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Hero() {
@@ -25,11 +26,11 @@ export default function Hero() {
 
                     <div className="flex flex-row-reverse gap-4 pt-4">
                         <button className="bg-pink-accent hover:bg-pink-soft hover:text-gray-dark text-white px-10 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg shadow-pink-accent/20">
-                            تسوق التشكيلة الجديدة
+                            <Link href={"#bestsellers"} >تسوق التشكيلة الجديدة</Link>
                         </button>
 
                         <button className="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all">
-                            اكتشف المزيد
+                            <Link href={"/products"} > اكتشف المزيد</Link>
                         </button>
                     </div>
 
