@@ -112,10 +112,10 @@ export default function Contact() {
                         <div>
                             <h4 className="text-2xl font-bold text-primary mb-8 font-cairo">معلومات التواصل</h4>
                             <div className="space-y-6">
-                                <a href="tel:+966501234567" className="flex items-center gap-4 justify-end group transition-all">
+                                <a href="tel:+961 70 781 107" className="flex items-center gap-4 justify-end group transition-all">
                                     <div className="group-hover:translate-x-[-5px] transition-transform">
                                         <h5 className="font-bold text-primary font-cairo">رقم الهاتف</h5>
-                                        <p className="text-muted-foreground group-hover:text-pink-accent transition-colors">+966 50 123 4567</p>
+                                        <p className="text-muted-foreground group-hover:text-pink-accent transition-colors">+961 70 781 107</p>
                                     </div>
                                     <div className="bg-pink-soft p-3 rounded-full text-pink-accent group-hover:bg-pink-accent group-hover:text-white transition-all shadow-sm">
                                         <Phone size={24} />

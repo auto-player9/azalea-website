@@ -13,7 +13,6 @@ export default function Home() {
       <Suspense fallback={<div className="py-20 px-4"><ProductSkeleton /></div>}>
         <BestsellersWrapper />
       </Suspense>
-
       <Collections />
       <About />
       <Contact />

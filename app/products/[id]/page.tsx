@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     const product = await client.fetch(PRODUCT_BY_ID_QUERY, { id });
     
     return {
-        title: product ? `${product.name} | Luxury Linen` : "منتجاتنا",
+        title: product ? `${product.name} | Azalea` : "منتجاتنا",
         description: product?.description || "وصف المنتج الفاخر"
     };
 }
