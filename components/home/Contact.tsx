@@ -122,10 +122,10 @@ export default function Contact() {
                                     </div>
                                 </a>
 
-                                <a href="mailto:info@luxurylinen.sa" className="flex items-center gap-4 justify-end group transition-all">
+                                <a href="mailto:azalea.website.shop@gmail.com" className="flex items-center gap-4 justify-end group transition-all">
                                     <div className="group-hover:translate-x-[-5px] transition-transform">
                                         <h5 className="font-bold text-primary font-cairo">البريد الإلكتروني</h5>
-                                        <p className="text-muted-foreground group-hover:text-pink-accent transition-colors">info@luxurylinen.sa</p>
+                                        <p className="text-muted-foreground group-hover:text-pink-accent transition-colors">azalea.website.shop@gmail.com</p>
                                     </div>
                                     <div className="bg-pink-soft p-3 rounded-full text-pink-accent group-hover:bg-pink-accent group-hover:text-white transition-all shadow-sm">
                                         <Mail size={24} />
